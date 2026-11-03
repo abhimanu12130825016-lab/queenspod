@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050505" />
+    <meta
+      name="description"
+      content="Queen's Pod — a riverside culinary retreat in Gangtok, Sikkim. Explore the menu, the space and reserve your table."
+    />
+    <title>Queen's Pod — A Culinary Retreat in Gangtok</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="progress-track" aria-hidden="true"><span id="progress-bar"></span></div>
+
+    <div class="splash" id="splash" aria-hidden="true">
+      <div class="splash-mark">Queen's <em>Pod</em></div>
+      <span class="splash-line"><i id="splash-progress"></i></span>
+      <p>Adampool · Gangtok · Sikkim</p>
+    </div>
+
+    <div class="scroll-track" id="menu-scroll-track" aria-hidden="true"></div>
+
+    <section class="visual-stage" id="menu-stage" aria-label="3D menu experience">
+      <div class="stage-backdrop" aria-hidden="true"></div>
+      <div class="world" id="world">
+        <div class="orb" id="orb"></div>
+        <h1 class="stage-headline" id="stage-headline">
+          <span class="headline-inner">
+            <span style="--i: 0">A</span>
+            <span style="--i: 1">little</span>
+            <span style="--i: 2">world</span>
+            <span style="--i: 3">of</span>
+            <span style="--i: 4"><em>good</em></span>
+            <span style="--i: 5"><em>things.</em></span>
+          </span>
+          <span class="stage-prompt">Scroll to explore the menu <b>↓</b></span>
+        </h1>
+      </div>
+
+      <div class="stage-details chrome" aria-hidden="true">
+        <span class="eyebrow"><i></i> Culinary retreat</span>
+        <p>16 Adampool, Lumsey<br />Tadong, Gangtok</p>
+      </div>
+      <div class="stage-coordinate chrome" aria-hidden="true">27°19'27.1&quot;N<br />88°35'38.0&quot;E</div>
+      <div class="stage-scroll chrome" aria-hidden="true"><span>Scroll to explore</span><i></i><span>01 — 15</span></div>
+      <div class="stage-vignette" aria-hidden="true"></div>
+    </section>
+
+    <div class="hero-info chrome" id="hero-info" aria-live="polite">
+      <div class="hero-info-top">
+        <span class="hero-category" id="hero-category">Guest favourite</span>
+        <span class="hero-count" id="hero-count">01 / 15</span>
+      </div>
+      <div class="hero-title-row">
+        <h2 id="hero-title">The Pod Momo Platter</h2>
+        <strong id="hero-price">₹395</strong>
+      </div>
+      <p id="hero-description">A generous table starter designed for sharing, with hand-folded momos and the house's bright chilli dip.</p>
+      <div class="hero-info-bottom">
+        <span id="hero-origin">Made for the table</span>
+        <div class="hero-buttons">
+          <button class="quiet-button" id="hero-view-button" type="button">View dish <b>↗</b></button>
+          <button class="solid-button small" id="hero-reserve-button" type="button">Reserve <b>↗</b></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-cue chrome" id="menu-cue" aria-hidden="true">
+      <span>Menu in motion</span>
+      <div class="cue-dots" id="cue-dots"></div>
+    </div>
+
+    <header class="site-header chrome" id="site-header">
+      <a class="wordmark" href="#menu-scroll-track" aria-label="Queen's Pod home">Queen's <em>Pod</em></a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#experience">The experience <span>01</span></a>
+        <a href="#archive">Menu <span>02</span></a>
+        <a href="#reviews">Guestbook <span>03</span></a>
+        <a href="#visit">Visit <span>04</span></a>
+      </nav>
+      <div class="header-actions">
+        <button class="outline-button" id="grid-button" type="button">Menu grid</button>
+        <button class="solid-button" id="top-reserve-button" type="button">Reserve a table <b>↗</b></button>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span><b class="sr-only">Toggle navigation</b>
+      </button>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <a href="#experience">The experience <span>01</span></a>
+        <a href="#archive">Menu <span>02</span></a>
+        <a href="#reviews">Guestbook <span>03</span></a>
+        <a href="#visit">Visit <span>04</span></a>
+        <button class="solid-button" id="mobile-reserve-button" type="button">Reserve a table <b>↗</b></button>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="experience section-dark" id="experience">
+        <div class="section-width experience-grid">
+          <div class="experience-media reveal tilt-surface">
+            <img src="./assets/queenspod/interior.jpg" alt="Garden dining room at Queen's Pod" loading="lazy" />
+            <span class="image-label">01 / The house</span>
+            <span class="image-caption">A room wrapped in green, glass and light.</span>
+          </div>
+          <div class="experience-copy reveal">
+            <p class="eyebrow"><i></i> The Queen's Pod experience</p>
+            <h2>Arrive for the view.<br /><em>Stay for the feeling.</em></h2>
+            <p class="large-copy">Set beside the river in the hills of Gangtok, Queen's Pod is a place to slow down — a garden of warm lights, generous plates and conversations that last a little longer.</p>
+            <p class="body-copy">The architecture folds around the landscape. Bamboo, glass, stone and plants make the room feel both hidden and open. Come for lunch, an evening out, a celebration or simply the pleasure of finding somewhere new.</p>
+            <div class="stats-row">
+              <div><strong>4.7</strong><span>Google rating</span></div>
+              <div><strong>1.7k+</strong><span>guest reviews</span></div>
+              <div><strong>11—10:30</strong><span>open daily</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="manifesto section-light">
+        <div class="section-width manifesto-grid">
+          <p class="eyebrow eyebrow-dark"><i></i> A table with a point of view</p>
+          <h2>Good food tastes better<br />when the <em>setting</em> stays with you.</h2>
+          <p class="manifesto-note">From a quiet afternoon by the water to a night under the pods, this is dining shaped by the landscape around it.</p>
+        </div>
+      </section>
+
+      <section class="archive section-light" id="archive">
+        <div class="section-width">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow eyebrow-dark"><i></i> The menu / 02</p>
+              <h2>A feast for<br /><em>every mood.</em></h2>
+            </div>
+            <p class="section-intro">A selection of the dishes and drinks guests come back for. Tap a category to find your next favourite.</p>
+          </div>
+          <div class="menu-filters" id="menu-filters" role="group" aria-label="Filter menu categories">
+            <button class="filter-button is-active" data-filter="all" type="button" aria-pressed="true">All</button>
+            <button class="filter-button" data-filter="small-plates" type="button" aria-pressed="false">Small plates</button>
+            <button class="filter-button" data-filter="mains" type="button" aria-pressed="false">Mains</button>
+            <button class="filter-button" data-filter="hearth" type="button" aria-pressed="false">Hearth &amp; grill</button>
+            <button class="filter-button" data-filter="drinks" type="button" aria-pressed="false">Drinks</button>
+          </div>
+          <div class="archive-grid" id="archive-grid"></div>
+          <p class="menu-note">Menu prices and availability may change. Please confirm with the team when you visit.</p>
+        </div>
+      </section>
+
+      <section class="reviews section-dark" id="reviews">
+        <div class="section-width">
+          <div class="section-heading section-heading-light reveal">
+            <div>
+              <p class="eyebrow"><i></i> The guestbook / 03</p>
+              <h2>Words from<br /><em>the table.</em></h2>
+            </div>
+            <p class="section-intro">A place is made by the people who find it. Here are a few notes from guests who made the drive.</p>
+          </div>
+          <div class="review-feature reveal">
+            <span class="quote-mark">“</span>
+            <blockquote>One of the most beautiful restaurants in Gangtok. Extremely well behaved staff and great ambience. Must visit for every tourist.</blockquote>
+            <div class="review-meta"><span>Guest review</span><span>Google · 5 / 5</span></div>
+          </div>
+          <div class="review-grid">
+            <article class="review-card reveal"><span class="review-stars">★★★★★</span><p>“The food was fresh, tasty, and served nicely. The ambience was comfortable and perfect for spending time with family or friends.”</p><span class="review-source">Google guest · recent visit</span></article>
+            <article class="review-card reveal"><span class="review-stars">★★★★★</span><p>“The location is absolutely stunning, nestled beside a river and surrounded by mountains. It feels like a hidden gem.”</p><span class="review-source">Google guest · Gangtok</span></article>
+            <article class="review-card reveal"><span class="review-stars">★★★★★</span><p>“The property is mesmerizing, services are top notch and the food is exceptionally tasty. A place worth remembering.”</p><span class="review-source">Guest review · 2025</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery section-dark" id="gallery">
+        <div class="section-width">
+          <div class="gallery-heading reveal">
+            <div>
+              <p class="eyebrow"><i></i> Inside the pod / 04</p>
+              <h2>Come for the<br /><em>atmosphere.</em></h2>
+            </div>
+            <p class="section-intro">A visual walk through the light, greenery, architecture and plates that make Queen's Pod feel unlike anywhere else.</p>
+          </div>
+          <div class="gallery-grid">
+            <button class="gallery-item gallery-tall reveal" type="button" data-full="./assets/queenspod/interior.jpg" data-caption="The garden room / a table under the lights"><img src="./assets/queenspod/interior.jpg" alt="Garden dining room" loading="lazy" /><span><i>01</i> The garden room</span></button>
+            <button class="gallery-item reveal" type="button" data-full="./assets/queenspod/dining.jpg" data-caption="The passage / bamboo, glass and stone"><img src="./assets/queenspod/dining.jpg" alt="Bamboo and glass interior at Queen's Pod" loading="lazy" /><span><i>02</i> The passage</span></button>
+            <button class="gallery-item gallery-wide reveal" type="button" data-full="./assets/queenspod/ambience.jpg" data-caption="The arrival / Queen's Pod at dusk"><img src="./assets/queenspod/ambience.jpg" alt="Queen's Pod exterior at dusk" loading="lazy" /><span><i>03</i> The arrival</span></button>
+            <button class="gallery-item reveal" type="button" data-full="./assets/queenspod/food.jpg" data-caption="The table / a view from inside"><img src="./assets/queenspod/food.jpg" alt="Interior view of Queen's Pod" loading="lazy" /><span><i>04</i> The table</span></button>
+            <button class="gallery-item reveal" type="button" data-full="./assets/queenspod/feature.jpg" data-caption="From the kitchen / plated with intention"><img src="./assets/queenspod/feature.jpg" alt="Plated dish at Queen's Pod" loading="lazy" /><span><i>05</i> From the kitchen</span></button>
+            <button class="gallery-item gallery-wide reveal" type="button" data-full="./assets/queenspod/hero.jpg" data-caption="A plate to share / guest photography"><img src="./assets/queenspod/hero.jpg" alt="Sushi platter at Queen's Pod" loading="lazy" /><span><i>06</i> A plate to share</span></button>
+          </div>
+          <p class="gallery-credit">Photography from the public Queen's Pod listing gallery.</p>
+        </div>
+      </section>
+
+      <section class="visit section-light" id="visit">
+        <div class="section-width visit-grid">
+          <div class="visit-copy reveal">
+            <p class="eyebrow eyebrow-dark"><i></i> Find your way here / 05</p>
+            <h2>Your table<br /><em>is waiting.</em></h2>
+            <p class="large-copy">Make the drive out of town. The river, the lights and the first bite are waiting at the end of it.</p>
+            <div class="visit-actions"><a class="solid-button dark" href="https://www.google.com/maps/search/?api=1&amp;query=Queen%27s%20Pod%2C%2016%20Adampool%2C%20Lumsey%2C%20Gangtok" target="_blank" rel="noreferrer">Open in Maps <b>↗</b></a><a class="text-link dark-link" href="tel:+917431000222">Call +91 74310 00222 <b>↗</b></a></div>
+          </div>
+          <div class="visit-card reveal">
+            <img src="./assets/queenspod/ambience.jpg" alt="Queen's Pod exterior beside the hillside" loading="lazy" />
+            <div class="visit-card-overlay"></div>
+            <div class="visit-card-copy"><span>Queen's Pod</span><strong>16 Adampool, Lumsey<br />Tadong, Gangtok<br />Sikkim — 737102</strong></div>
+          </div>
+          <div class="hours-card reveal">
+            <div><span>Open daily</span><strong>11:00 am — 10:30 pm</strong></div>
+            <div><span>Best for</span><strong>Lunch · dinner · celebrations</strong></div>
+            <div><span>Average for two</span><strong>₹1,500 approx.</strong></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-dark">
+      <div class="section-width footer-top">
+        <div><a class="footer-wordmark" href="#menu-scroll-track">Queen's <em>Pod</em></a><p>A culinary retreat in Gangtok.</p></div>
+        <div class="footer-links"><a href="#experience">Experience</a><a href="#archive">Menu</a><a href="#reviews">Guestbook</a><a href="#visit">Visit</a></div>
+        <div class="footer-contact"><span>16 Adampool, Lumsey</span><a href="tel:+917431000222">+91 74310 00222</a><a href="https://www.instagram.com/queenspodsikkim" target="_blank" rel="noreferrer">Instagram ↗</a></div>
+      </div>
+      <div class="section-width footer-bottom"><span>© 2026 Queen's Pod</span><span>Made for long lunches and longer evenings.</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Queen%27s%20Pod%2C%2016%20Adampool%2C%20Lumsey%2C%20Gangtok" target="_blank" rel="noreferrer">Google Maps ↗</a></div>
+    </footer>
+
+    <div class="grid-view" id="grid-view" aria-hidden="true">
+      <div class="grid-header"><h2>Queen's Pod <em>menu archive</em></h2><button class="outline-button" id="grid-close-button" type="button">× Close grid</button></div>
+      <div class="grid-rows" id="grid-rows"></div>
+    </div>
+
+    <div class="dish-modal" id="dish-modal" aria-hidden="true">
+      <div class="modal-scrim" data-close-dish></div>
+      <article class="dish-panel">
+        <button class="modal-close" type="button" data-close-dish aria-label="Close dish details">×</button>
+        <div class="dish-image"><img id="dish-modal-image" src="" alt="" /></div>
+        <div class="dish-panel-copy"><span class="hero-category" id="dish-modal-category"></span><h2 id="dish-modal-title"></h2><p id="dish-modal-description"></p><div class="dish-panel-foot"><strong id="dish-modal-price"></strong><button class="solid-button" id="dish-modal-reserve" type="button">Reserve a table <b>↗</b></button></div></div>
+      </article>
+    </div>
+
+    <div class="reservation-modal" id="reservation-modal" aria-hidden="true">
+      <div class="modal-scrim" data-close-reservation></div>
+      <div class="reservation-card">
+        <button class="modal-close" type="button" data-close-reservation aria-label="Close reservation form">×</button>
+        <div id="reservation-form-view"><p class="eyebrow"><i></i> Make it an occasion</p><h2>Reserve your<br /><em>table.</em></h2><p>Join us at Queen's Pod for an evening under the lights. Our team will confirm your request by call or WhatsApp.</p><form id="reservation-form"><label>Full name<input name="name" type="text" placeholder="Your name" required /></label><div class="form-row"><label>Phone<input name="phone" type="tel" placeholder="+91 00000 00000" required /></label><label>Guests<select name="guests"><option>2 guests</option><option>4 guests</option><option>6 guests</option><option>8+ guests</option></select></label></div><div class="form-row"><label>Date<input name="date" type="date" required /></label><label>Time<select name="time"><option>Lunch · 12:30 pm</option><option>Lunch · 2:00 pm</option><option>Dinner · 7:30 pm</option><option>Dinner · 9:00 pm</option></select></label></div><button class="solid-button full" type="submit">Send reservation request <b>↗</b></button></form></div>
+        <div class="reservation-success" id="reservation-success" hidden><span class="success-mark">✓</span><h2>Request<br /><em>received.</em></h2><p>Thank you for choosing Queen's Pod. Our reservation concierge will be in touch shortly.</p><button class="solid-button" type="button" data-close-reservation>Return to the experience</button></div>
+      </div>
+    </div>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true"><div class="modal-scrim" data-close-lightbox></div><figure><button class="modal-close" type="button" data-close-lightbox aria-label="Close image">×</button><img id="lightbox-image" src="" alt="" /><figcaption id="lightbox-caption"></figcaption></figure></div>
+
+    <button class="back-top" id="back-top" type="button" aria-label="Scroll to top">↑</button>
+    <script src="./script.js"></script>
+  </body>
+</html>
